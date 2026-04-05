@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Used Cars - AJ AUTO LLC</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/language.js"></script>
+
+<style>
+section{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* 车辆列表 */
+.car-list{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+}
+
+/* 卡片 */
+.car-card{
+width:320px;
+background:#fff;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.car-card:hover{
+transform:translateY(-8px);
+}
+
+/* 图片 */
+.car-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* 内容 */
+.car-info{
+padding:15px;
+}
+
+.price{
+color:#007bff;
+font-size:20px;
+font-weight:bold;
+margin:5px 0;
+}
+
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:#007bff;
+color:#fff;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#0056b3;
+}
+
+/* 手机适配 */
+@media(max-width:768px){
+.car-list{
+flex-direction:column;
+align-items:center;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+<img src="images/logo.png" class="logo">
+AJ AUTO LLC
+</h1>
+
+<div class="lang">
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('cn')">中文</button>
+</div>
+
+<nav>
+<a href="./index.html">Home</a>
+<a href="./about.html">About</a>
+<a href="./services.html">Services</a>
+<a href="./cars.html">Used Cars</a>
+<a href="./contact.html">Contact</a>
+</nav>
+
+</header>
+
+<section>
+
+<h2 class="en">Used Cars For Sale</h2>
+<h2 class="cn">二手车销售</h2>
+
+<div class="car-list">
+
+<!-- 车辆1 -->
+<div class="car-card">
+<img src="images/car1.jpg">
+
+<div class="car-info">
+<h3>2001 Toyota Camry</h3>
+
+<p class="price">$3,800</p>
+
+<p class="en">Mileage: 210,000 miles</p>
+<p class="cn">里程：210000 英里</p>
+
+<p class="en">VIN: 1234567890ABCDEFG</p>
+<p class="cn">车架号：1234567890ABCDEFG</p>
+
+<p class="en">Clean title, well maintained, excellent condition.</p>
+<p class="cn">无事故，保养良好，车况优秀。</p>
+
+<a class="btn" href="tel:+15038416826">Call Now</a>
+</div>
+</div>
+
+<!-- 车辆2 -->
+<div class="car-card">
+<img src="images/car2.jpg">
+
+<div class="car-info">
+<h3>2015 Nissan NV200</h3>
+
+<p class="price">$7,800</p>
+
+<p class="en">Mileage: 92,000 miles</p>
+<p class="cn">里程：92000 英里</p>
+
+<p class="en">VIN: 9876543210ABCDEFG</p>
+<p class="cn">车架号：9876543210ABCDEFG</p>
+
+<p class="en">Low mileage, clean interior, smooth drive.</p>
+<p class="cn">低里程，内饰干净，驾驶顺畅。</p>
+
+<a class="btn" href="tel:+15038416826">Call Now</a>
+</div>
+</div>
+
+<!-- 车辆3 -->
+<div class="car-card">
+<img src="images/car3.jpg">
+
+<div class="car-info">
+<h3>2015 Mercedes-Benz GLE450 </h3>
+
+<p class="price">$10,500</p>
+
+<p class="en">Mileage: 99,000 miles</p>
+<p class="cn">里程：99000 英里</p>
+
+<p class="en">VIN: ABCDEFG1234567890</p>
+<p class="cn">车架号：ABCDEFG1234567890</p>
+
+<p class="en">Luxury SUV, fully loaded, very clean.</p>
+<p class="cn">豪华SUV，高配，车况极佳。</p>
+
+<a class="btn" href="tel:+15038416826">Call Now</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer style="text-align:center; padding:20px; background:#eee;">
+<p>AJ AUTO LLC</p>
+<p>5315 NE 105th Ave, Portland OR</p>
+<p>+1 503-841-6826</p>
+</footer>
+
+<a class="float-call" href="tel:+15038416826">Call</a>
+
+</body>
+
+</html>

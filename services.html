@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Services - AJ AUTO LLC</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/language.js"></script>
+
+<style>
+/* 页面布局 */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+/* 服务卡片布局 */
+.services{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.card{
+  flex:1;
+  min-width:280px;
+  background:#fff;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+/* 图片 */
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+/* 内容 */
+.card-content{
+  padding:15px;
+  text-align:center;
+}
+
+.card-content h3{
+  margin:10px 0;
+}
+
+.card-content p{
+  font-size:14px;
+  color:#555;
+}
+
+/* 按钮 */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 15px;
+  background:#007bff;
+  color:#fff;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn:hover{
+  background:#0056b3;
+}
+
+/* 手机适配 */
+@media screen and (max-width:768px){
+  .services{
+    flex-direction:column;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+<img src="images/logo.png" class="logo">
+AJ AUTO LLC
+</h1>
+
+<div class="lang">
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('cn')">中文</button>
+</div>
+
+<nav>
+<a href="./index.html">Home</a>
+<a href="./about.html">About</a>
+<a href="./services.html">Services</a>
+<a href="./cars.html">Used Cars</a>
+<a href="./contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<section>
+
+<h2 class="en">Our Services</h2>
+<h2 class="cn">我们的服务</h2>
+
+<div class="services">
+
+<!-- 服务1 -->
+<div class="card">
+<img src="images/service1.jpg">
+<div class="card-content">
+<h3 class="en">Engine Repair</h3>
+<h3 class="cn">发动机维修</h3>
+
+<p class="en">Professional diagnostics and repair for all engine issues.</p>
+<p class="cn">专业发动机检测与维修服务。</p>
+
+<a class="btn" href="tel:+15038416826">Call Now</a>
+</div>
+</div>
+
+<!-- 服务2 -->
+<div class="card">
+<img src="images/service2.jpg">
+<div class="card-content">
+<h3 class="en">Wheel Alignment</h3>
+<h3 class="cn">四轮定位</h3>
+
+<p class="en">Precision alignment for better driving and tire life.</p>
+<p class="cn">精准四轮定位，提高驾驶稳定性与轮胎寿命。</p>
+
+<a class="btn" href="tel:+15038416826">Call Now</a>
+</div>
+</div>
+
+<!-- 服务3 -->
+<div class="card">
+<img src="images/service3.jpg">
+<div class="card-content">
+<h3 class="en">Body & Paint</h3>
+<h3 class="cn">钣金喷漆</h3>
+
+<p class="en">High-quality body repair and professional paint finish.</p>
+<p class="cn">高品质钣金修复与专业喷漆。</p>
+
+<a class="btn" href="tel:+15038416826">Call Now</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>AJ AUTO LLC</p>
+<p>5315 NE 105th Ave, Portland OR 97220</p>
+<p>+1 503-841-6826</p>
+</footer>
+
+<a class="float-call" href="tel:+15038416826">Call</a>
+
+</body>
+</html>
